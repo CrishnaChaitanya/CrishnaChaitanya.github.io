@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("http://fonts.cdnfonts.com/css/monument-extended");
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+:root {
+  --dark-bg: #0c0a0a;
+  --gray-1: #bcb4b4;
+  --deep-dark: #1e1e1e;
+  --gray-2: #363636;
+  --white: white;
+  --black: black;
+}
+html {
+  line-height: 1.54;
+  font-size: 10px;
+  font-family: "Monument Extended", sans-serif;
+  background-color: var(--dark-bg);
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img,
+svg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+button {
+  outline: none;
+}
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+/* Smooth Scroll 
+[data-scrollbar] {
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--gray-1);
+  .scroll-content {
+    background-color: var(--dark-bg);
+  }
+  .scrollbar-track.scrollbar-track-y {
+    background: var(--deep-dark);
+    .scrollbar-thumb-y {
+      background: var(--gray-1);
+    }
+  }
+} */
