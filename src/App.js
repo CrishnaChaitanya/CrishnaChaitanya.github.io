@@ -5,12 +5,14 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <>
       <Router>
         <NavMenu />
+        <ScrollToTop />
         <Switch>
           <Route path="/about">
             <About />

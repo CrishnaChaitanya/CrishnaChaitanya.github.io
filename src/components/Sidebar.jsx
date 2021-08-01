@@ -66,30 +66,29 @@ const Sidebar = () => {
 {/* <div className="float-sm"> */}
   <div className="fl-fl float-fb">
   <i class="fa fa-github"></i>
-    <a href="" target="_blank"> GitHub</a>
+    <a href="https://github.com/CrishnaChaitanya" target="_blank"> GitHub</a>
   </div>
   <div className="fl-fl float-tw">
   <i class="fa fa-linkedin" aria-hidden="true"></i>
 
-    <a href="" target="_blank">linkedin</a>
+    <a href="https://www.linkedin.com/in/krishna-chaitanya-78b154199/" target="_blank">linkedin</a>
   </div>
   <div className="fl-fl float-gp">
   <i class="fa fa-envelope-o" aria-hidden="true"></i>
 
-    <a href="" target="_blank">Mail</a>
-  </div>
-  <div className="fl-fl float-rs">
-    <i className="fa fa-rss"></i>
-    <a href="" target="_blank">Follow via RSS</a>
+    <a href="/Contact" target="_blank">Mail</a>
   </div>
   <div className="fl-fl float-ig">
     <i className="fa fa-instagram"></i>
-    <a href="" target="_blank">Follow us!</a>
+    <a href="https://www.instagram.com/xrishnachaitanya/" target="_blank">Follow us!</a>
   </div>
-  <div className="fl-fl float-pn">
-    <i className="fa fa-pinterest"></i>
-    <a href="" target="_blank">Follow us!</a>
+  
+  <div className="fl-fl float-rs">
+    <i className="fa fa-instagram"></i>
+    <a href="https://www.instagram.com/xrishnachaitanya/" target="_blank">Follow via RSS</a>
   </div>
+  
+  
 
 </SidebarStyle>
 

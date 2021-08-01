@@ -4,9 +4,12 @@ import Arrow from "../images/arrow.svg";
 import Backgroung from "../images/movie.png"
 import Me from "../images/me.png"
 import Sidebar from "./Sidebar"
+import HomeAbout from "./HomeAbout";
+import Button from "../components/Button"
 const HeroStyles = styled.div`
+
   .hero {
-    height: 75vh;
+    height: 80vh;
     // min-height: 500px;
     width: 100%;
     // text-align: center;
@@ -27,17 +30,29 @@ const HeroStyles = styled.div`
       width: 100%;
     }
     .hero__name {
-      font-family: "Montserrat SemiBold";
       font-size: 100%;
       color: white;
     }
   }
+  .hero__heading em{
+    color:#f65757;
+  }
+  .del{
+    color:white;
+    font-size: 4em;
+    font-weight: bold;
+    opacity:0.8;
+  }
+  .del em{
+    color:#f65757;
+  }
   .wrap-info {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-right;
     align-items: center;
     margin-top:25px;
-    margin-left:230px;
+    float:right;
+    margin-right:20px;
   }
   #text{
       margin-left:20px;
@@ -50,7 +65,7 @@ const HeroStyles = styled.div`
   display: flex;
   width: 80%;
   box-shadow: 0.125rem 4px 4px;
-  margin-top:110px;
+  margin-top:80px;
   margin-left:100px;
   margin-bottom:105px;
 }
@@ -81,7 +96,7 @@ const HeroStyles = styled.div`
   color: white;
   outline: none;
   text-shadow: none;
-  background-color: #4d90fe;
+  background-color: #f65757;
 }
 
 .multi-button button:focus {
@@ -126,10 +141,26 @@ const HeroStyles = styled.div`
 .some-text p{
   opacity:0.7;
 }
+.gist{
+  color:grey;
+  font-size:small;
+  width:40%;
+  margin-left:70px;
+  margin-right:30px;
+  margin-top:30px;
+  opacity:0.9;
+}
+.vone{
+  display:flex;
+  justify-content:to-left;
+  align-items:center;
+  
+}
 
 `;
 
 const Name = () => {
+  // let check = { color: "red", size:lg };
   return (
     <HeroStyles>
         
@@ -139,12 +170,17 @@ const Name = () => {
           <h1 className="hero__heading">
             <span>
               Hello<em>.</em>
-            </span>{" "}
+            </span>
             <span>I am Krishna</span>
           </h1>
+          <h1 className="del">I <em>build</em> things for the <em>web.</em></h1>
         </div>
+        <div className="vone">
+        <div className="gist">
+            <p>I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.</p>
+          </div>
         <div className="wrap-info">
-        <img src={Arrow} style={{ width: "53px", height: "53px" }}></img>
+        <img src={Arrow} style={{ width: "55px", height: "55px" }}></img>
         <h2 id="text">
           <span>Web developer</span>
           <br />
@@ -154,22 +190,13 @@ const Name = () => {
         </h2>
       </div>
       </div>
+      </div>
       
       <div class="multi-button">
-        <button>Download CV</button>
-        <button>Contact</button>
+        <button><a href="https://github.com/JustinClarke/JustinClarke/raw/main/resume.pdf" target="_blank">Download CV</a></button>
+        <button><Button btnText="see my works" btnLink="/projects" /></button>
       </div>
-
-      <div className="some-text">
-          <p>I fell in love with programming and have at least learnt something, I think.. 🤷‍♂️
-
-I am fluent in classics like C, C++, Javascript and Python.
-
-My field of Interest's are building new  Web Technologies and Products, I'm into Deep Learning and Natural Launguage Processing as well
-
-Whenever possible, I also learn to develop using Modern Javascript Frameworks  like Node.js and React.js</p>
-          <img src={Me}></img>
-      </div>
+    <HomeAbout/>
       
       <Sidebar/>
     </HeroStyles>

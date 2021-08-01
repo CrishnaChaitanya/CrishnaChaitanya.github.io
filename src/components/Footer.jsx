@@ -113,26 +113,24 @@ const Footer = () => {
             // target="_blank"
             onClick={copyToClipboard}
           >
-            krishna.chaitanya.kanna9@gmail.com
+            kadali.krishna.chaitanya9@gmail.com
           </a>
           </textare>
         </div>
         <div>
           <ul>
+            
             <li>
-              <a href="https://twitter.com/julesforrest">Twitter</a>
+              <a href="https://www.linkedin.com/in/krishna-chaitanya-78b154199/">linkedin</a>
             </li>
             <li>
-              <a href="https://codepen.io/julesforrest">Codepen</a>
+              <a href="mailto:kadali.krishna.chaitanya9@gmail.com">Email</a>
             </li>
             <li>
-              <a href="mailto:julesforrest@gmail.com">Email</a>
+              <a href="https://www.instagram.com/xrishnachaitanya/">Instagram</a>
             </li>
             <li>
-              <a href="https://dribbble.com/julesforrest">Dribbble</a>
-            </li>
-            <li>
-              <a href="https://github.com/julesforrest">Github</a>
+              <a href="https://github.com/CrishnaChaitanya">Github</a>
             </li>
             <li>
               <p>👋</p>

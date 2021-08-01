@@ -6,12 +6,14 @@ const SectionTitleStyle = styled.div`
   p {
     font-family: font-family: 'Monument Extended';
     font-size: 2rem;
+    color:white;
   }
   h2 {
     font-family:font-family: 'Monument Extended';
     font-size: 6rem;
     margin-top: 0.5rem;
     text-transform: uppercase;
+    color:white;
   }
   @media only screen and (max-width: 768px) {
     text-align: center;
