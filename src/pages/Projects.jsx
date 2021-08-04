@@ -29,7 +29,7 @@ const Projects = () => {
                 <ProjectItem title1={item.title1} title2={item.title2} number={index} desc={item.desc} stack={item.stack}/>
             ))}
         </div>
-        <Sidebar/>
+        {/* <Sidebar/> */}
         </ProjectsStyles>
         <Footer/>
 </>

@@ -21,6 +21,7 @@ const ProjectItemStyles = styled.div`
   .adjust:hover {
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 0px #fff;
+    
   }
   .description {
     font-family: "Montserrat", sans-serif;
@@ -30,39 +31,41 @@ const ProjectItemStyles = styled.div`
     -webkit-text-stroke-width: 0px;
     width: 800px;
   }
-  .projectItem__img {
-    width: 100%;
-    height: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    display: inline-block;
-    border: 3px solid var(--gray-2);
-    img {
-      height: 100%;
-    }
-  }
-  .projectItem__info {
-    margin-top: 1rem;
-    background-color: var(--deep-dark);
-    padding: 1rem;
-    border-radius: 12px;
-  }
-  .projectItem__title {
-    font-size: 2.2rem;
-  }
-  .projectItem__desc {
-    font-size: 1.6rem;
-    font-family: "RobotoMono Regular";
-    margin-top: 1rem;
-  }
   .number {
     font-size: xx-large;
     opacity: 0.7;
   }
 
-  @media only screen and (max-width: 768px) {
-    .projectItem__img {
-      height: 350px;
+  @media only screen and (max-width: 500px) {
+    .projectElement {
+      // margin-left:100px;
+     
+      font-size: x-large;
+      font-weight: bolder;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+    }
+    .adjust {
+      margin: 40px;
+      margin-left: 20px;
+    }
+    .adjust:hover {
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 0px #fff;
+      
+    }
+    .description {
+      font-family: "Montserrat", sans-serif;
+      font-size: small;
+      word-wrap: break-word;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke-width: 0px;
+      width:275px;
+    }
+
+    .number {
+      font-size: xx-large;
+      opacity: 0.7;
     }
   }
 `;
@@ -86,8 +89,7 @@ export default function ProjectItem({
     set();
     setShow(false);
   };
-
-  // const techStack = [<DiReact/>,<DiHtml5/>]
+  
   let techStack = {
     "react": <DiReact style={{width:"50px", marginRight:"10px"}}/>,
     "html": <DiHtml5 style={{width:"50px", marginRight:"10px"}}/>,

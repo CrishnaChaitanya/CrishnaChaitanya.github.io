@@ -51,6 +51,15 @@ const ContactSectionStyle = styled.div`
       padding: 4rem 2rem 2rem 2rem;
     }
   }
+  @media only screen and (max-width:500px)
+  {
+    .maill{
+      word-break: break-all;
+      letter-spacing:1px;
+      
+    }
+  }
+
 `;
 
 export default function ContactSection() {
@@ -62,7 +71,9 @@ export default function ContactSection() {
         <div className="contactSection__wrapper">
           <div className="left">
             <ContactInfoItem icon={<MdLocalPhone />} text="9390465129" />
+            <div className="maill">
             <ContactInfoItem icon={<MdEmail />} text="kadali.krishna.chaitanya9@gmail.com" />
+            </div>
             <ContactInfoItem text="Vizag, Andhra Pradesh" />
           </div>
           <div className="right">
@@ -71,7 +82,7 @@ export default function ContactSection() {
         </div>
       </div>
     </ContactSectionStyle>
-    <Sidebar/>
+    {/* <Sidebar/> */}
     <Footer/>
     </>
   );

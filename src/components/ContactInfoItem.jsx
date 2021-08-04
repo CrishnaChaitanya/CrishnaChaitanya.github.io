@@ -22,6 +22,7 @@ const ItemStyles = styled.div`
   svg {
     width: 3.5rem;
   }
+ 
 `;
 
 export default function ContactInfoItem({
@@ -32,7 +33,7 @@ export default function ContactInfoItem({
     <ItemStyles>
       <div className="icon">{icon}</div>
       <div className="info">
-        <h2 style={{fontWeight:"lighter"}}>{text}</h2>
+        <h2 style={{fontWeight:"lighter" ,color:"indianred"}}>{text}</h2>
       </div>
     </ItemStyles>
   );

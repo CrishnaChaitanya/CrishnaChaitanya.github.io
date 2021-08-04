@@ -26,11 +26,17 @@ const Footstyle = styled.div`
     margin: auto;
   }
 
-  @media (min-width: 500px) {
+  @media screen and (min-width: 500px) {
     ul {
       grid-auto-flow: column;
     }
   }
+  @media screen and (max-width: 500px) {
+    .contact a{
+      font-size:10px;
+    }
+  }
+ 
 
   a {
     color: black;
@@ -104,7 +110,7 @@ const Footer = () => {
     <Footstyle>
       <div className="container">
         <div className="contact">
-        <textare>
+        
           <a
             href="mailto:krishna.chaitanya.kanna9@gmail.com"
             title="Email me"
@@ -115,7 +121,7 @@ const Footer = () => {
           >
             kadali.krishna.chaitanya9@gmail.com
           </a>
-          </textare>
+          
         </div>
         <div>
           <ul>

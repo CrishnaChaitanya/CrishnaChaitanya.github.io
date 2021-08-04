@@ -21,7 +21,7 @@ li {
   border-radius: 8px;
   transition: 0.3s ease background-color;
   &:hover {
-    background-color: var(--deep-dark);
+    background-color: "white");
   }
 }
 a {
@@ -29,7 +29,7 @@ a {
   font-family: 'Monument Extended', sans-serif;
   padding: 1rem 2rem;
   font-size: 2rem;
-  color: var(--gray-1);
+  color: "white";
   outline: none;
 }
 .active {
