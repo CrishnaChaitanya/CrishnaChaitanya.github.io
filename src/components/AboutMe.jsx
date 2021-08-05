@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Mee from "../images/mee.png";
+import  useMediaQuery  from "@material-ui/core/useMediaQuery";
 
 const LeftSide = styled.div
 `
@@ -75,8 +76,13 @@ em{
 
 `
 const AboutMe = () => {
+    const matches = useMediaQuery('(max-width:500px)');
+    const equals = useMediaQuery('(min-width:700px)')
     return(
         <LeftSide>
+                    {matches && 
+        <img src={Mee} style={{width:"300px", height:"300px"}}></img>
+        }
         <div className="container">
         <div className="leftSide">
         <h1>Hi I am <em>krishna chaitanya</em></h1>
@@ -89,9 +95,10 @@ const AboutMe = () => {
         </div>
         <button class="custom-btn btn-9">Get CV</button>
         </div>
-        <img src={Mee} style={{width:"500px", height:"500px"}}></img>
-  
+        {equals &&
+        <img src={Mee} style={{width:"500px", height:"500px"}}></img>}
         </div>
+
         
         </LeftSide>
     )
