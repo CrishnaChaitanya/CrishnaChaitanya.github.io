@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ProjectImg from "../images/project.png";
 import { DiReact, DiHtml5,DiCss3,DiBootstrap,DiJavascript1,DiMysql,DiNodejs,DiPython} from "react-icons/di";
+import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 const ProjectItemStyles = styled.div`
   .projectElement {
@@ -42,16 +43,15 @@ const ProjectItemStyles = styled.div`
      
       font-size: x-large;
       font-weight: bolder;
-      -webkit-text-fill-color: transparent;
-      -webkit-text-stroke-width: 1px;
+      -webkit-text-fill-color: white;
+      -webkit-text-stroke: 0px #fff;
     }
     .adjust {
       margin: 40px;
       margin-left: 20px;
     }
     .adjust:hover {
-      -webkit-text-fill-color: white;
-      -webkit-text-stroke: 0px #fff;
+      
       
     }
     .description {
@@ -80,6 +80,8 @@ export default function ProjectItem({
 }) {
   const [val, set] = useState();
   const [show, setShow] = useState(false);
+  const matches = useMediaQuery('(max-width:500px)');
+
 
   const loadImg = () => {
     set(<img src={img} className="smooth"></img>);
@@ -102,6 +104,7 @@ export default function ProjectItem({
 
   return (
     <ProjectItemStyles>
+     
       <a
         href="#"
         className="menu_items"
@@ -120,8 +123,15 @@ export default function ProjectItem({
               {stack.map((x)=>techStack[x])}
             </div>
           </div>
+          
+
+          
           <div className="forImg">{val}</div>
         </div>
+        {matches && 
+                <img src={img} className="smooth"></img>
+
+          }
       </a>
     </ProjectItemStyles>
   );
