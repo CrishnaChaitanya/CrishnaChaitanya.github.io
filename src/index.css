@@ -1,9 +1,24 @@
-@import url("http://fonts.cdnfonts.com/css/monument-extended");
+/* @import url("http://fonts.cdnfonts.com/css/monument-extended"); */
+/* @import url(//db.onlinewebfonts.com/c/99501fdab737541e9315ceaf9229370f?family=Monument+Extended); */
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+@font-face {
+  font-family: "Monument Extended";
+  src: url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.eot");
+  src: url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/99501fdab737541e9315ceaf9229370f.svg#Monument Extended")
+      format("svg");
 }
 ::selection {
   background-color: antiquewhite;
