@@ -56,18 +56,6 @@ const HomeAbout = () => {
         <SectionTitle heading="About_Me" subheading="hi !" ></SectionTitle>
         <div className="inner">
         <StyledAboutSection>
-
-      {/* <div className="some-text">
-
-      <p>I fell in love with programming and have at least learnt something, I think.. 🤷‍♂️
-
-I am fluent in classics like C, C++, Javascript and Python.
-
-My field of Interest's are building new  Web Technologies and Products, I'm into Deep Learning and Natural Launguage Processing as well
-
-Whenever possible, I also learn to develop using Modern Javascript Frameworks  like Node.js and React.js</p>
-      <img src={Me}></img>
-  </div> */}
           <StyledText>
           <div>
             <p>
@@ -95,7 +83,7 @@ Whenever possible, I also learn to develop using Modern Javascript Frameworks  l
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
-        <img src={Me} className="HomeImg" style={{}}></img>
+        {/* <img src={Me} className="HomeImg" style={{}}></img> */}
         
         </StyledAboutSection>
         </div>

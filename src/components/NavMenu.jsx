@@ -37,6 +37,7 @@ a {
 }
 }
 .mobile-menu-icon {
+  color:white;
 position: absolute;
 right: 1rem;
 top: 1rem;

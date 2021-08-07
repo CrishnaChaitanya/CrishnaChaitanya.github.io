@@ -149,6 +149,7 @@ const HeroStyles = styled.div`
   margin-right:30px;
   margin-top:30px;
   opacity:0.9;
+  font-size:10px;
 }
 .vone{
   display:flex;
@@ -156,6 +157,67 @@ const HeroStyles = styled.div`
   align-items:center;
   
 }
+@media only screen and (max-width:500px)
+{
+  .container{
+    font-size:5px;
+
+  }
+  .del{
+    font-size:20px;
+  }
+  .hero__heading {
+    color:white;
+  font-size: 10em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  position: relative;
+  span {
+    display: flex;
+    width: 100%;
+  }
+  .hero__name {
+    font-size: 100%;
+    color: white;
+  }
+}
+
+.vone{
+  display:flex;
+  flex-direction: column-reverse;
+  justify-content:center;
+  align-items:center;
+  
+}
+#text{
+  font-size:10px;
+}
+.gist{
+ display:none;
+
+}
+.wrap-info {
+  display: flex;
+  justify-content: flex-right;
+  align-items: center;
+}
+.wrap-info #text{
+  font-size:15px;
+  font-weight:lighter;
+}
+.multi-button {
+  display: flex;
+  width: 80%;
+  box-shadow: 0.125rem 4px 4px;
+  margin-top:0px;
+  margin-left:35px;
+  margin-bottom:105px;
+
+}
+.multi-button a{
+  font-size: 15px;
+}
+
 
 `;
 
