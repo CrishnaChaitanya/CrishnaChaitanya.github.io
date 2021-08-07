@@ -2,7 +2,7 @@ import React from "react"
 import Me from "../images/me.png"
 import SectionTitle from "./SectionTitle"
 import styled from "styled-components"
-import { height } from "dom7";
+
 
 const StyledAboutSection = styled.section`
 font-size:small;
@@ -19,6 +19,12 @@ font-size:small;
   a{
     color:#f65757
   }
+  @media only screen and (max-width:500px)
+{
+  .HomeImg{
+    display:none;
+  }
+}
 `;
 const StyledText = styled.div`
 opacity:0.8;
@@ -83,7 +89,8 @@ const HomeAbout = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
-        {/* <img src={Me} className="HomeImg" style={{}}></img> */}
+        
+        <img src={Me} className="HomeImg"></img>
         
         </StyledAboutSection>
         </div>
