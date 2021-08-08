@@ -7,6 +7,8 @@ import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimeItem from "../components/TimeItem";
+import { useEffect } from "react";
+
 
 
 const Linetime = styled.div
@@ -32,11 +34,11 @@ const percentage = [" CGPA: 9.0","", "Precentage: 81%","", "😉",""];
 const colors = ["primary","secondary"]
 const edu = [
     "B. Tech. Computer Science Engineering, GITAM, Vizag",
-    "Achieved 3rd place, at the “World Space Week” organized by Indian Space Research Organization (OCT-2017).",
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quidem.",
     "12th Grade [CBSE], Kendriya Vidyalaya, Vizag",
-    "98% marks secured for ABRSM graded music exam.",
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quidem.",
     "Google",
-    "Joint Secretary at ACM (Association for Computing Machinery) student chapter, GITAM UNIVERSITY."
+    "WEB DEV core member at CSI (Computer Society Of India) student chapter, GITAM UNIVERSITY."
   ];
   
     return(

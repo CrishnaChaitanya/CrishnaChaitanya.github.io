@@ -7,7 +7,11 @@ import HomeProjectItem from "../components/HomeProjectItem"
 import projects from "../data/ProjectsData"
 import 'swiper/swiper-bundle.min.css';
 import styled from "styled-components"
-
+import mentorr from "../images/mentorr.png";
+import fso from "../images/FSO.png";
+import recipe from "../images/Recipe.png";
+import todo from "../images/Todo.png";
+import weather from "../images/Weather.png";
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
@@ -58,6 +62,13 @@ const ProjectSectionStyle = styled.div`
   }
 `;
 
+let ss = {
+  "fso": fso,
+  "mentorr":mentorr,
+  "todo":todo,
+  "weather":weather,
+  "recipe":recipe,
+}
 export default function ProjectSection() {
     return(
         <ProjectSectionStyle>
@@ -91,7 +102,7 @@ export default function ProjectSection() {
                         <SwiperSlide >
                      <HomeProjectItem 
                      title1={item.title1}
-                    img={item.img}
+                    img={ss[item.img]}
                     desc={item.desc}
                     github={item.github}
                     site={item.site}

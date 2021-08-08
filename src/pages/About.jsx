@@ -48,7 +48,7 @@ export default function About() {
         <AboutMe/>
     <SectionTitle heading="MY SKILLS" subheading="</>"/>
     
-    <div className={classes.root} style={{margin:"30px 100px 30px"}}>
+    <div className={classes.root} data-aos="fade-up-right" style={{margin:"30px 100px 30px"}}>
       <Grid container spacing={3}>
         <Grid item xs>
           <Paper className={classes.paper}  style={{color:"#61DBFB", width:"150px"}}><DiReact/></Paper>

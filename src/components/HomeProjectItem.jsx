@@ -25,8 +25,7 @@ const ProjectItemStyles = styled.div`
   }
   .projectItem__title {
     font-size: 2.2rem;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
+    
   }
   .projectItem__desc {
     font-size: 1.6rem;
@@ -99,7 +98,7 @@ export default function HomeProjectItem({
   return (
     <ProjectItemStyles>
 
-    <div className="projectItem__img">
+    <div className="projectItem__img" data-aos="flip-right">
       {console.log(title1)}
       <img src={img}></img>
       </div>

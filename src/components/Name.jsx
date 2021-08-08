@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Arrow from "../images/arrow.svg";
 import Backgroung from "../images/movie.png"
@@ -6,6 +6,8 @@ import Me from "../images/me.png"
 import Sidebar from "./Sidebar"
 import HomeAbout from "./HomeAbout";
 import Button from "../components/Button"
+import Aos from "aos"
+import "aos/dist/aos.css"
 const HeroStyles = styled.div`
 
   .hero {
@@ -223,27 +225,30 @@ const HeroStyles = styled.div`
 
 const Name = () => {
   // let check = { color: "red", size:lg };
+  useEffect(() => {
+    Aos.init({duration:1000})
+  },[]);
   return (
     <HeroStyles>
         
       <div className="hero">
         
-        <div className="container">
-          <h1 className="hero__heading">
+        <div className="container" >
+          <h1 className="hero__heading" data-aos="fade-down">
             <span>
               Hello<em>.</em>
             </span>
             <span>I am Krishna</span>
           </h1>
-          <h1 className="del">I <em>build</em> things for the <em>web.</em></h1>
+          <h1 className="del" data-aos="fade-down">I <em>build</em> things for the <em>web.</em></h1>
         </div>
         <div className="vone">
-        <div className="gist">
-            <p>I'm a software engineer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.</p>
+        <div className="gist" data-aos="fade-down">
+            <p>Hello!! I am a web dev currently on my third year of Computer Science Engineering at Gitam University.WEB DEV.I Love it.I Love the thrill.I Love to see my imagination come to life.Now, I always try to make something better than my previous project, hence, getting more attracted to web-development.</p>
           </div>
         <div className="wrap-info">
-        <img src={Arrow} style={{ width: "55px", height: "55px" }}></img>
-        <h2 id="text">
+        <img src={Arrow} data-aos="flip-up" style={{ width: "55px", height: "55px" }}></img>
+        <h2 id="text" data-aos="flip-down">
           <span>Web developer</span>
           <br />
           <span>UI/UX</span>
@@ -254,9 +259,9 @@ const Name = () => {
       </div>
       </div>
       
-      <div class="multi-button">
-        <button><a href="https://github.com/JustinClarke/JustinClarke/raw/main/resume.pdf" target="_blank">Download CV</a></button>
-        <button><Button btnText="see my works" btnLink="/projects" /></button>
+      <div class="multi-button" >
+        <button><a href="https://drive.google.com/file/d/1mdZlngnGsoqbCox8lwjUYWkjNIratVmH/view?usp=sharing" target="_blank">Download CV</a></button>
+        <button ><Button btnText="see my works" btnLink="/projects" /></button>
       </div>
     <HomeAbout/>
       

@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import Aos from "aos"
+import "aos/dist/aos.css"
 
 const SectionTitleStyle = styled.div`
   text-align: center;
@@ -31,7 +33,7 @@ export default function SectionTitle({
   heading = 'need heading',
 }) {
   return (
-    <SectionTitleStyle className="section-title">
+    <SectionTitleStyle className="section-title"  data-aos="fade-up">
       <p>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>

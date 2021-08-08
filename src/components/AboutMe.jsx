@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import Mee from "../images/mee.png";
 import  useMediaQuery  from "@material-ui/core/useMediaQuery";
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 const LeftSide = styled.div
 `
@@ -76,6 +79,9 @@ em{
 
 `
 const AboutMe = () => {
+    useEffect(() => {
+        Aos.init({duration:1000})
+      },[]);
     const matches = useMediaQuery('(max-width:500px)');
     const equals = useMediaQuery('(min-width:700px)')
     return(
@@ -84,19 +90,15 @@ const AboutMe = () => {
         <img src={Mee} style={{width:"300px", height:"300px"}}></img>
         }
         <div className="container">
-        <div className="leftSide">
-        <h1>Hi I am <em>krishna chaitanya</em></h1>
-        <div className="containerTex">
-            <p>I am from chittagong, Bangladesh. A place of beauty and nature. Since my childhood, i love art and design. I always try to design stuff with my unique point of view. I also love to create things that can be usefull to others.
-  
-            I started coding since I was in high school. Coding is also an art for me. I love it and now I have the opportunity to design along with the coding. I find it really interesting and I enjoyed the process a lot.
-  
-             My vision is to make the world a better place. Now almost everything is becoming better than ever. It is time for us to create more good stuff that helps the world to become a better place.</p>
+        <div className="leftSide" data-aos="fade-down">
+        <h1 >Hi I am <em>krishna chaitanya</em></h1>
+        <div className="containerTex" >
+            <p>Hello!! I am a web dev currently on my third year of Computer Science Engineering at Gitam University.WEB DEV.I Love it.I Love the thrill.I Love to see my imagination come to life.Now, I always try to make something better than my previous project, hence, getting more attracted to web-development.</p>
         </div>
-        <button class="custom-btn btn-9">Get CV</button>
+        <button class="custom-btn btn-9"><a href="https://drive.google.com/file/d/1mdZlngnGsoqbCox8lwjUYWkjNIratVmH/view" target="_blank" >Get CV</a></button>
         </div>
         {equals &&
-        <img src={Mee} style={{width:"500px", height:"500px"}}></img>}
+        <img src={Mee} data-aos="fade-left" style={{width:"500px", height:"500px"}}></img>}
         </div>
 
         
