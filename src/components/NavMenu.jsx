@@ -110,7 +110,7 @@ const [showNav, setShowNav] = useState(false);
           onKeyDown={() => setShowNav(!showNav)}
           tabIndex={0}
         >
-          <MdClose />
+          <MdClose style={{color:"red"}}/>
         </div>
         <li>
           <NavLink
