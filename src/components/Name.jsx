@@ -253,7 +253,7 @@ const Name = () => {
           <br />
           <span>UI/UX</span>
           <br />
-          <span>Noob</span>
+          <span>CSE student</span>
         </h2>
       </div>
       </div>
