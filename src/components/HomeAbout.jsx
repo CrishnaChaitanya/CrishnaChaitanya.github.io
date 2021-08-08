@@ -54,21 +54,21 @@ opacity:0.8;
     }
   }
 `;
-const skills = ['JavaScript (ES6+)', 'React', 'Java', 'DSA', 'Node.js', 'WordPress'];
+const skills = ['JavaScript (ES6+)', 'React', 'Java', 'DSA', 'Node.js'];
 
 const HomeAbout = () => {
     return(
         <>
-        <SectionTitle heading="About_Me" subheading="hi !" ></SectionTitle>
+        <SectionTitle heading="About_Me" subheading="{this.me}" ></SectionTitle>
         <div className="inner">
         <StyledAboutSection>
           <StyledText>
           <div data-aos="fade-right">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis sit repudiandae error eos necessitatibus voluptates voluptatum deserunt dolore sunt ipsum.
+            I'm a web developer in Gitam University's third year of Computer Science Engineering. WEB DEVELOPMENT It's fantastic. I enjoy the rush. I enjoy seeing my ideas come to life. Now, I always aim to improve on my prior project, which has piqued my interest in web building.
             </p>
 
-            <p>
+            {/* <p>
               Fast-forward to today, and I've had the privilege of working at{' '}
               <a href="#">an advertising agency</a>,{' '}
               <a href="#">a start-up</a>,{' '}
@@ -77,7 +77,7 @@ const HomeAbout = () => {
               main focus these days is building accessible, inclusive products and digital
               experiences at <a href="#">Upstatement</a> for a variety of
               clients.
-            </p>
+            </p> */}
 
             <p>Here are a few technologies I've been working with recently:</p>
             </div>

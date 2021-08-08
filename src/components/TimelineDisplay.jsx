@@ -34,9 +34,9 @@ const percentage = [" CGPA: 9.0","", "Precentage: 81%","", "😉",""];
 const colors = ["primary","secondary"]
 const edu = [
     "B. Tech. Computer Science Engineering, GITAM, Vizag",
-  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quidem.",
+    "Secured 1st place in DSC hack_slash hackathon and CR Reddy College of Engineering,TECHFEST-2021.",
     "12th Grade [CBSE], Kendriya Vidyalaya, Vizag",
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus, quidem.",
+    "House Captain(3rd Prize)",
     "Google",
     "WEB DEV core member at CSI (Computer Society Of India) student chapter, GITAM UNIVERSITY."
   ];

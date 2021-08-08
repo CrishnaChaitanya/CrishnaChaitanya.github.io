@@ -93,7 +93,7 @@ const AboutMe = () => {
         <div className="leftSide" data-aos="fade-down">
         <h1 >Hi I am <em>krishna chaitanya</em></h1>
         <div className="containerTex" >
-            <p>Hello!! I am a web dev currently on my third year of Computer Science Engineering at Gitam University.WEB DEV.I Love it.I Love the thrill.I Love to see my imagination come to life.Now, I always try to make something better than my previous project, hence, getting more attracted to web-development.</p>
+            <p>I am a computer-science student who has a passion for building web apps.</p>
         </div>
         <button class="custom-btn btn-9"><a href="https://drive.google.com/file/d/1mdZlngnGsoqbCox8lwjUYWkjNIratVmH/view" target="_blank" >Get CV</a></button>
         </div>

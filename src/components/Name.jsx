@@ -244,7 +244,7 @@ const Name = () => {
         </div>
         <div className="vone">
         <div className="gist" data-aos="fade-down">
-            <p>Hello!! I am a web dev currently on my third year of Computer Science Engineering at Gitam University.WEB DEV.I Love it.I Love the thrill.I Love to see my imagination come to life.Now, I always try to make something better than my previous project, hence, getting more attracted to web-development.</p>
+            <p>Interested in the entire frontend spectrum and working on ambitious projects with positive people.Are you minding a project?Let's talk</p>
           </div>
         <div className="wrap-info">
         <img src={Arrow} data-aos="flip-up" style={{ width: "55px", height: "55px" }}></img>
