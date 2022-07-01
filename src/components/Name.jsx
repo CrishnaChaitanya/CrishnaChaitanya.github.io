@@ -260,7 +260,7 @@ const Name = () => {
       </div>
       
       <div class="multi-button" >
-        <button><a href="https://drive.google.com/file/d/1mdZlngnGsoqbCox8lwjUYWkjNIratVmH/view?usp=sharing" target="_blank">Download CV</a></button>
+        <button><a href="https://drive.google.com/file/d/1GcA9ENgv5-udzTcBgBkw2HbZ3EGA50Ri/view?usp=sharing" target="_blank">Download CV</a></button>
         <button ><Button btnText="see my works" btnLink="/projects" /></button>
       </div>
     <HomeAbout/>

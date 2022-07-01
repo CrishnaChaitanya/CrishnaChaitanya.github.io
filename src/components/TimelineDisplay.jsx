@@ -29,16 +29,16 @@ letter-spacing:1px;
 
 const TimelineDisplay = () => {
     const period = ["2019 - Present","", "2017 - 2019","", "2009-present",""];
-const percentage = [" CGPA: 9.0","", "Precentage: 81%","", "😉",""];
+const percentage = [" CGPA: 8.6","", "Precentage: 81%","", "😉",""];
 // const activities = ["Achieved 3rd place, at the “World Space Week” organized by Indian Space Research Organization (OCT-2017).","","98% marks secured for ABRSM graded music exam.","","Joint Secretary at ACM (Association for Computing Machinery) student chapter, GITAM UNIVERSITY.",""]
 const colors = ["primary","secondary"]
 const edu = [
     "B. Tech. Computer Science Engineering, GITAM, Vizag",
-    "1st place in DSC hack_slash hackathon and CR Reddy College TECHFEST-2021.",
+    "Received Certificate of Appreciation for college projects",
     "12th Grade [CBSE], Kendriya Vidyalaya, Vizag",
     "House Captain(3rd Prize)",
     "Google",
-    "WEB DEV core member at CSI (Computer Society Of India) student chapter, GITAM UNIVERSITY."
+    "1st place in DSC hack_slash hackathon and CR Reddy College TECHFEST-2021."
   ];
   
     return(

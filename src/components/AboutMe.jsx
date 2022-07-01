@@ -95,7 +95,7 @@ const AboutMe = () => {
         <div className="containerTex" >
             <p>I am a computer-science student who has a passion for building web apps.</p>
         </div>
-        <button class="custom-btn btn-9"><a href="https://drive.google.com/file/d/1mdZlngnGsoqbCox8lwjUYWkjNIratVmH/view" target="_blank" >Get CV</a></button>
+        <button class="custom-btn btn-9"><a href="https://drive.google.com/file/d/1GcA9ENgv5-udzTcBgBkw2HbZ3EGA50Ri/view" target="_blank" >Get CV</a></button>
         </div>
         {equals &&
         <img src={Mee} data-aos="fade-left" style={{width:"500px", height:"500px"}}></img>}

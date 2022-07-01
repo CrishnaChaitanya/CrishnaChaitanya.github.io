@@ -65,8 +65,8 @@ const HomeAbout = () => {
           <StyledText>
           <div data-aos="fade-right">
             <p>
-            I'm a third year Computer Science Engineering Student, at GITAM, Vizag. WEB DEVELOPMENT It's fantastic. I enjoy the rush. I enjoy seeing my ideas come to life. Now, I always aim to improve on my prior project, which has piqued my interest in web building.
             </p>
+            I'm a 4th year Computer Science Engineering Student, at GITAM, Vizag. WEB DEVELOPMENT It's fantastic. I enjoy the rush. I enjoy seeing my ideas come to life. Now, I always aim to improve on my prior project, which has piqued my interest in web building.
 
             {/* <p>
               Fast-forward to today, and I've had the privilege of working at{' '}

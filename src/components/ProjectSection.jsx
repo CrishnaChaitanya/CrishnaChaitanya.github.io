@@ -12,6 +12,8 @@ import fso from "../images/FSO.png";
 import recipe from "../images/Recipe.png";
 import todo from "../images/Todo.png";
 import weather from "../images/Weather.png";
+import sic from "../images/SIC.PNG"
+import dashboard from "../images/homeDashboard.PNG"
 // install Swiper modules
 SwiperCore.use([Navigation]);
 
@@ -68,6 +70,8 @@ let ss = {
   "todo":todo,
   "weather":weather,
   "recipe":recipe,
+  "dashboard":dashboard,
+    "sic":sic,
 }
 export default function ProjectSection() {
     return(

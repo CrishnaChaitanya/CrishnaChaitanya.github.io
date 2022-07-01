@@ -1,10 +1,28 @@
 import { v4 as uuidv4 } from "uuid";
-import RandomImg from "../images/project.png";
-import fso from "../images/FSO.png";
-import recipe from "../images/Recipe.png";
-import todo from "../images/Todo.png";
-import weather from "../images/Weather.png";
+
 const projects = [
+  {
+    id: uuidv4(),
+    title1: "College Placements Dashboard",
+    title2: "web app",
+    desc: "This is Placement Dashboard for GITAM UNIVERSITY. was created to make the Career Fulfillment Statistics accessible and easy to analyze.It includes tabular data and a visual representation of the data in interactive charts and drawings. Data may be seen on the website in three ways: campus-wide, overall, and governing body statistics.",
+    img: "dashboard",
+    category: "top",
+    stack: ["react", "django", "material"],
+    github: "https://github.com/GCGC-GDSC/Dashboard_Frontend",
+    site: "https://github.com/GCGC-GDSC/Dashboard_Frontend",
+  },
+  {
+    id: uuidv4(),
+    title1: "Student Internship Website",
+    title2: "web app",
+    desc: "This website shows all of the opportunities available to college students, such as internships, scholarships, hackathons, live events, and so on. Website is authorized for all 18000+ students plus teachers with college mail Id. The Admin Panel allows authorized users to post opportunities into the website.",
+    img: "sic",
+    category: "top",
+    stack: ["django", "bootstrap"],
+    github: "https://github.com/CrishnaChaitanya/G-explore",
+    site: "https://sicgcgc.gitam.edu/internships/",
+  },
   {
     id: uuidv4(),
     title1: "Recipe Search",

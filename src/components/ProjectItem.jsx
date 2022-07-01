@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import ProjectImg from "../images/project.png";
 import { DiReact, DiHtml5,DiCss3,DiBootstrap,DiJavascript1,DiMysql,DiNodejs,DiPython} from "react-icons/di";
-import {SiStyledComponents,SiMaterialUi,SiFirebase} from "react-icons/si"
+import {SiStyledComponents,SiMaterialUi,SiFirebase,SiDjango} from "react-icons/si"
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { useEffect } from "react";
 import RandomImg from "../images/mentorr.png";
@@ -11,6 +11,8 @@ import fso from "../images/FSO.png";
 import recipe from "../images/Recipe.png";
 import todo from "../images/Todo.png";
 import weather from "../images/Weather.png";
+import sic from "../images/SIC2.PNG"
+import dashboard from "../images/dashboard.PNG"
 import Aos from "aos"
 import "aos/dist/aos.css"
 const ProjectItemStyles = styled.div`
@@ -103,6 +105,7 @@ export default function ProjectItem({
     "styled":<SiStyledComponents style={{width:"60px", marginRight:"10px"}}/>,
     "material":<SiMaterialUi style={{width:"50px", marginRight:"10px"}}/>,
     "firebase":<SiFirebase style={{width:"40px", marginRight:"10px"}}/>,
+    "django":<SiDjango style={{width:"40px", marginRight:"10px"}}/>,
   };
   let ss = {
     "fso": fso,
@@ -110,6 +113,8 @@ export default function ProjectItem({
     "todo":todo,
     "weather":weather,
     "recipe":recipe,
+    "dashboard":dashboard,
+    "sic":sic,
   }
   const [val, set] = useState();
   const [show, setShow] = useState(false);
